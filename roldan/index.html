@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Dashboard Bienestar</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+  <header> 
+    <h1>Mi Dashboard de Bienestar</h1> 
+    <button id="toggle-theme">    Cambiar Tema</button> 
+    <input type="color" id="color-picker" value="#6200ea"> 
+  </header> 
+ 
+  <main> 
+    <section class="card"> 
+      <h2>Notas rápidas</h2> 
+      <textarea id="notas" placeholder="Escribe tus notas aquí..."></textarea> 
+      <button id="guardar-notas">Guardar</button> 
+    </section> 
+ 
+    <section class="card"> 
+      <h2>Hábitos saludables</h2> 
+      <form id="habitos-form"> 
+        <label>Horas de estudio: <input type="number" id="horas-estudio"></label> 
+        <label>Vasos de agua: <input type="number" id="vasos-agua"></label> 
+        <label>Horas de sueño: <input type="number" id="horas-sueno"></label> 
+        <label>Minutos de ejercicio: <input type="number" id="minutos
+ejercicio"></label> 
+        <button type="submit">Registrar</button> 
+      </form> 
+      <p id="puntaje"></p> 
+    </section> 
+ 
+    <section class="card"> 
+      <h2>Progreso semanal</h2> 
+      <canvas id="grafica"></canvas> 
+    </section> 
+  </main> 
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<script src="script.js"></script> 
+</body> 
+</html>
